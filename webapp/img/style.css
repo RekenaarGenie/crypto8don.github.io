@@ -132,6 +132,7 @@ body {
 }
 .player_box {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -140,10 +141,25 @@ body {
     border-radius: 5%;
     overflow: hidden;
 }
-#player_skin {
-    position: relative;
+.player_skin {
+    position:absolute;
     height: var(--player-box-height);
-    bottom: calc(var(--player-box-height) / -7.5);
+    bottom: calc(var(--player-box-height) / -4.9);
+}
+#player_skin_glow {
+    filter: drop-shadow(0px 0px 0px #f24e32) drop-shadow(0px 0px 5px #f24e32);
+    animation: glow_skin 5s ease infinite;
+}
+@keyframes glow_skin {
+    0% {
+        filter: drop-shadow(0px 0px 0px #f24f324b) drop-shadow(0px 0px 5px #f24f324b);
+    }
+    50% {
+        filter: drop-shadow(0px 0px 10px #f24e32) drop-shadow(0px 0px 30px #f24e32);
+    }
+    100% {
+        filter: drop-shadow(0px 0px 0px #f24f324b) drop-shadow(0px 0px 5px #f24f324b);
+    }
 }
 .footer_navigation {
     display: flex;
