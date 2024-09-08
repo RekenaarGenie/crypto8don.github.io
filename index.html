@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="webapp/img/style.css">
+    <link rel="stylesheet" href="webapp/img/chat_style.css">
+    <link rel="stylesheet" href="webapp/img/screen_style.css">
+    <link rel="stylesheet" href="webapp/img/popup_style.css">
+    <link rel="stylesheet" href="webapp/img/block_elements.css">
+    <link rel="stylesheet" href="webapp/img/image_glow_style.css">
+    <title>ExCryptoTycoon</title>
+</head>
+<body>
+    <!-- <div id="bg_image"></div> -->
+    <!-- <img id="bg_image" src="/cache/images/Web_Photo_Editor2.jpg" alt=""> -->
+    <div class="count_table">
+        <div class="player">
+            <span class="lvl-count">11</span>
+            <span>LVL</span> 
+        </div>
+        <div id="options_btn" onclick="showScreen('screen_options')"><img src="cache/images/options_icon2.svg" alt=""></div>
+    </div>
+<div id="game-container">
+        <div id="screen_home" class="screen active">
+            <div class="actives-value-container">
+                <span class="actives-value-box">⚛︎55</span>
+                <span class="actives-value-box">⚡️125k</span>
+                <span class="actives-value-box">$5/1s</span>
+            </div>
+            <div class="player_box">
+                <!-- <img class="player_skin" src="cache/images/player/10411620_1974.svg" alt=""> -->
+                <img class="player_skin" src="cache/images/player/11602236_21004063.svg" alt="">
+                <!-- <img id="player_skin_glow" class="player_skin" src="cache/images/player/10411620_1974_blow.svg" alt=""> -->
+                <img id="player_skin_glow" class="player_skin" src="cache/images/player/11602236_21004063_blow.svg" alt="">
+            </div>
+        </div>
+        <div id="screen_options" class="screen">
+            <h1></h1>
+        </div>
+        <div id="screen_upgrade" class="screen">
+            <h1>Upgrade your techics</h1>
+            <p>Это второй экран.</p>
+        </div>
+        <div id="screen_lvl" class="screen">
+            <h1>Your level</h1>
+            <p>Upgrade your character!</p>
+        </div>
+        <div id="screen_store" class="screen">
+            <h1>Экран 3</h1>
+            <p>Это третий экран.</p>
+        </div>
+        <div id="screen_more" class="screen">
+            <h1>Экран 4</h1>
+            <p>Это четвёртый экран.</p>
+        </div>
+
+        <!-- <div class="game-container-footer"></div> -->
+</div>
+    <div class="footer_navigation">
+        <div onclick="showScreen('screen_home')" class="active_screen"><img src="cache/images/home_icon2.svg" alt=""><span>HOME</span><div class="box-gradient"></div></div>
+        <div onclick="showScreen('screen_upgrade')"><img src="cache/images/alt_upgrade_icon.svg" alt=""><span>UPGRADE</span><div class="box-gradient"></div></div>
+        <div onclick="showScreen('screen_lvl')"><img src="cache/images/lvl_icon.svg" alt=""><span>LVL</span><div class="box-gradient"></div></div>
+        <div onclick="showScreen('screen_store')"><img src="cache/images/store_icon.svg" alt=""><span>STORE</span><div class="box-gradient"></div></div>
+        <div onclick="showScreen('screen_more')"><img src="cache/images/more_icon.svg" alt=""><span>MORE</span><div class="box-gradient"></div></div>
+    </div>
+    <script src="webapp/scripts/app.js"></script>
+    <script src="webapp/scripts/popup.js"></script>
+    <script src="webapp/scripts/screen.js"></script>
+</body>
+</html>
