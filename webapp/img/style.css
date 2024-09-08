@@ -171,6 +171,7 @@ body {
 }
 .player_box img {
     pointer-events: none;
+    user-select: none;
 }
 .player_skin {
     position:absolute;
