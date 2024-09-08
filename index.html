@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="webapp/img/style.css">
     <link rel="stylesheet" href="webapp/img/chat_style.css">
     <link rel="stylesheet" href="webapp/img/screen_style.css">
+    <link rel="stylesheet" href="webapp/img/popup_style.css">
+    <link rel="stylesheet" href="webapp/img/block_elements.css">
     <link rel="stylesheet" href="webapp/img/image_glow_style.css">
     <title>ExCryptoTycoon</title>
 </head>
@@ -15,18 +17,23 @@
     <!-- <img id="bg_image" src="/cache/images/Web_Photo_Editor2.jpg" alt=""> -->
     <div class="count_table">
         <div class="player">
-            <div class="user_pic"></div>
-            <span>User</span> 
+            <span class="lvl-count">11</span>
+            <span>LVL</span> 
         </div>
         <div id="options_btn" onclick="showScreen('screen_options')"><img src="cache/images/options_icon2.svg" alt=""></div>
     </div>
 <div id="game-container">
         <div id="screen_home" class="screen active">
-            <h1>Экран 1</h1>
-            <p>Это первый экран.</p>
+            <div class="actives-value-container">
+                <span class="actives-value-box">⚛︎55</span>
+                <span class="actives-value-box">⚡️125k</span>
+                <span class="actives-value-box">$5/1s</span>
+            </div>
             <div class="player_box">
-                <img class="player_skin" src="cache/images/player/10411620_1974.svg" alt="">
-                <img id="player_skin_glow" class="player_skin" src="cache/images/player/10411620_1974_blow.svg" alt="">
+                <!-- <img class="player_skin" src="cache/images/player/10411620_1974.svg" alt=""> -->
+                <img class="player_skin" src="cache/images/player/11602236_21004063.svg" alt="">
+                <!-- <img id="player_skin_glow" class="player_skin" src="cache/images/player/10411620_1974_blow.svg" alt=""> -->
+                <img id="player_skin_glow" class="player_skin" src="cache/images/player/11602236_21004063_blow.svg" alt="">
             </div>
         </div>
         <div id="screen_options" class="screen">
@@ -59,10 +66,7 @@
         <div onclick="showScreen('screen_more')"><img src="cache/images/more_icon.svg" alt=""><span>MORE</span><div class="box-gradient"></div></div>
     </div>
     <script src="webapp/scripts/app.js"></script>
+    <script src="webapp/scripts/popup.js"></script>
     <script src="webapp/scripts/screen.js"></script>
-    <script>
-        let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
-        tg.expand(); //расширяем на все окно
-    </script>
 </body>
 </html>

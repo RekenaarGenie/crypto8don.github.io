@@ -1,0 +1,18 @@
+.popup {
+    position: absolute;
+    color: #d9d3d3;
+    font-size: 24px;
+    animation: popupMove 1s ease-out forwards;
+  }
+  
+  @keyframes popupMove {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  }
+  

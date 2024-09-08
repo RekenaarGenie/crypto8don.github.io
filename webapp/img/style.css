@@ -22,6 +22,7 @@
     --navheight-bottom: 8vh;
     --active-nav: #212121;
     --background-color: #222222;
+    --text-value-box: #696e6f;
     --nav-bg-color: #151515de;
     --text-color: #dae2e3;
     --active-text-color: #f24e32;
@@ -70,8 +71,8 @@ body {
     width: 70%;
     height: var(--navheight);
     background-color: var(--nav-bg-color);
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 
 
     display: flex;
@@ -84,23 +85,50 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
-.player .user_pic {
-    background-color: aquamarine;
-    height: calc(var(--navheight) - 10px);
-    width: calc(var(--navheight) - 10px);
-    border-radius: 100%;
+.player span {
+    font-size: 2.5vh;
+}
+.player .lvl-count {
+    text-align: center;
     margin-left: 20px;
-    margin-right: 10px;
+}
+.actives-value-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.actives-value-box {
+    background-color: #0d0d0d58;
+    color: var(--text-value-box);
+    margin-bottom: 5px;
+    width: calc((100vi - 50px) / 3);
+    font-size: 1.5vh;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.actives-value-box:first-child {
+    margin-right: 5px;
+}
+.actives-value-box:last-child {
+    margin-left: 5px;
 }
 #options_btn {
-    width: 5vh;
-    height: 5vh;
+    display: flex;
+    width: 4vh;
+    height: 4vh;
     margin-right: 20px;
+    justify-content: center;
+    align-items: center;
 }
 #options_btn img {
-    width: 5vh;
-    height: 5vh;
+    width: 4vh;
+    height: 4vh;
 }
 #game-container {
     display: flex;
