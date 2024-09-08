@@ -169,6 +169,9 @@ body {
     border-radius: 5%;
     overflow: hidden;
 }
+.player_box img {
+    pointer-events: none;
+}
 .player_skin {
     position:absolute;
     height: var(--player-box-height);
