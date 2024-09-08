@@ -1,42 +1,31 @@
 .popup {
     position: absolute;
-<<<<<<< HEAD
     color: #f24e32;
     font-size: 24px;
     user-select: none;
     pointer-events: none;
     animation: popupMove 0.5s ease-out forwards;
-=======
     color: #ff0000;
     font-size: 24px;
     user-select: none;
     pointer-events: none;
     animation: popupMove 1s ease-out forwards;
->>>>>>> 58a00c51ff9fb695aed3a4ecced91fffd10c1872
 }
   
 @keyframes popupMove {
     0% {
         opacity: 1;
         transform: translateY(0);
-<<<<<<< HEAD
         filter: drop-shadow(0px 0px 5px #f24e32) drop-shadow(0px 0px 0px #f24e32);
     }
     50% {
         opacity: 0.5;
         transform: translateY(-25px);
         filter: drop-shadow(0px 0px 0px #f24e32) drop-shadow(0px 0px 15px #f24e32);
-=======
->>>>>>> 58a00c51ff9fb695aed3a4ecced91fffd10c1872
     }
     100% {
         opacity: 0;
         transform: translateY(-50px);
-<<<<<<< HEAD
         filter: drop-shadow(0px 0px 10px #f24e32) drop-shadow(0px 0px 15px #f24e32);
     }
 }
-=======
-    }
-}
->>>>>>> 58a00c51ff9fb695aed3a4ecced91fffd10c1872
