@@ -5,8 +5,8 @@
     user-select: none;
     pointer-events: none;
     animation: popupMove 0.5s ease-out forwards;
+    will-change: transform, opacity, filter; /* Оптимизация */
 }
-  
 @keyframes popupMove {
     0% {
         opacity: 1;
