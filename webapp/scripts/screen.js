@@ -126,4 +126,3 @@ function showScreen(screenId) {
         }, { once: true }); // Обработчик сработает один раз и удалится
     }
 }
-

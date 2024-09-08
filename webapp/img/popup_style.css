@@ -1,11 +1,11 @@
-.popup {
+/* .popup {
     position: absolute;
     color: #f24e32;
     font-size: 24px;
     user-select: none;
     pointer-events: none;
     animation: popupMove 0.5s ease-out forwards;
-    will-change: transform, opacity, filter; /* Оптимизация */
+    will-change: transform, opacity, filter;
 }
 @keyframes popupMove {
     0% {
@@ -22,5 +22,39 @@
         opacity: 0;
         transform: translateY(-50px);
         filter: drop-shadow(0px 0px 10px #f24e32) drop-shadow(0px 0px 15px #f24e32);
+    }
+} */
+
+
+.popup {
+    position: fixed;
+    color: #f24e32;
+    font-size: 24px;
+    user-select: none;
+    pointer-events: none;
+    animation: popupMove 0.7s ease-out forwards;
+    -webkit-animation: popupMove 0.7s ease-out forwards; /* Для WebKit-браузеров */
+    -moz-animation: popupMove 0.7s ease-out forwards; /* Для Firefox */
+    -o-animation: popupMove 0.7s ease-out forwards; /* Для старых версий Opera */
+    -ms-animation: popupMove 0.7s ease-out forwards; /* Для IE10 */
+    will-change: transform, opacity, filter; /* Оптимизация */
+  }
+  
+
+@keyframes popupMove {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: drop-shadow(0px 0px 20px #f24e32);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(-50px);
+        filter: drop-shadow(0px 0px 0px #f24e32);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+        filter: drop-shadow(0px 0px 0px #f24e32);
     }
 }

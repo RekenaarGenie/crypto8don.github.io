@@ -1,0 +1,26 @@
+/* Стили для notification */
+.notification {
+    position: fixed; /* Фиксированное позиционирование */
+    top: 10px; /* Отступ от верхнего края */
+    left: 50%;
+    transform: translateX(-50%); /* Центрирование по горизонтали */
+    background-color: #333; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень для лучшего отображения */
+    opacity: 0; /* Начальная невидимость */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Плавные переходы */
+    z-index: 1000; /* Убедиться, что уведомление выше других элементов */
+  }
+  
+  .notification.show {
+    opacity: 1; /* Сделать уведомление видимым */
+    transform: translateX(-50%) translateY(0); /* Появляется на месте */
+  }
+  
+  .notification.hide {
+    opacity: 0; /* Скрыть уведомление */
+    transform: translateX(-50%) translateY(-50px); /* Уехать вверх */
+  }
+  

@@ -49,7 +49,8 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: var(--background-color);
-    overflow: hidden;
+    overflow:hidden;
+    max-width: 100vi;
     /* background: linear-gradient(135deg, rgba(34,34,34,1) 0%,rgba(48,48,48,1) 47%,rgba(43,43,43,1) 51%,rgba(34,34,34,1) 100%); */
     /* background-image: url(/cache/images/Web_Photo_Editor.jpg);
     background-position: center;
@@ -185,6 +186,7 @@ body {
     height: var(--player-box-height);
     bottom: calc(var(--player-box-height) / -4.9);
 }
+
 #player_skin_glow {
     filter: drop-shadow(0px 0px 0px #f24e32) drop-shadow(0px 0px 5px #f24e32);
     animation: glow_skin 5s ease infinite;

@@ -1,0 +1,55 @@
+.counter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50; /* Цвет текста */
+  }
+  
+  .count {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .count.update {
+    animation: countChange 0.2s ease-in-out;
+  }
+  
+  @keyframes countChange {
+    0% {
+      transform: scale(1);
+      color: #4caf50;
+    }
+    50% {
+      transform: scale(1.2);
+      color: #ffeb3b; /* Цвет при изменении */
+    }
+    100% {
+      transform: scale(1);
+      color: #4caf50;
+    }
+  }
+  
+
+  .upgrade-button {
+    background-color: #ff9800; /* Цвет фона */
+    border: none; /* Убираем границу */
+    color: white; /* Цвет текста */
+    padding: 12px 24px; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Выравнивание по горизонтали */
+    font-size: 18px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    border-radius: 5px; /* Скругление углов */
+    cursor: pointer; /* Изменяем курсор при наведении */
+    transition: background-color 0.1s, transform 0.1s; /* Плавные переходы */
+  }
+  
+  .upgrade-button:hover {
+    background-color: #fb8c00; /* Цвет фона при наведении */
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+  }
+  
+  .upgrade-button:active {
+    background-color: #f57c00; /* Цвет фона при нажатии */
+    transform: scale(0.95); /* Легкое уменьшение при нажатии */
+  }
