@@ -2,17 +2,18 @@
     position: absolute;
     color: #d9d3d3;
     font-size: 24px;
+    user-select: none;
+    pointer-events: none;
     animation: popupMove 1s ease-out forwards;
-  }
+}
   
-  @keyframes popupMove {
+@keyframes popupMove {
     0% {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
     100% {
-      opacity: 0;
-      transform: translateY(-50px);
+        opacity: 0;
+        transform: translateY(-50px);
     }
-  }
-  
+}
