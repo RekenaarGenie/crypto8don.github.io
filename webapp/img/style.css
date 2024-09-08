@@ -10,7 +10,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    user-select: none;
+    /* user-select: none; */
+    /* -webkit-user-select: none; */
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -168,10 +169,16 @@ body {
     background-color: #0d0d0d58;
     border-radius: 5%;
     overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
 }
 .player_box img {
     pointer-events: none;
     user-select: none;
+    -webkit-user-select: none;
+}
+.player_box img::selection {
+    background: transparent;
 }
 .player_skin {
     position:absolute;
@@ -253,7 +260,7 @@ body {
 .active_screen > .box-gradient {
     opacity: 50%;
     background-color: var(--active-nav);
-    animation: nav-click 0.3s ease-out;
+    animation: nav-click 0.2s ease-out;
     border-radius: 5px;
 }
 @keyframes nav-click {

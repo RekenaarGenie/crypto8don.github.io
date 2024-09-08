@@ -1,4 +1,5 @@
-document.querySelector('.player_box').addEventListener('click', function(event) {
+
+document.getElementById('popup_zone').addEventListener('click', function(event) {
     const x = event.clientX;
     const y = event.clientY;
     

@@ -23,6 +23,9 @@
     align-items: center;
     justify-content: flex-start;
 }
+.show_anim {
+    animation: screen-show 0.2s ease;
+}
 .screen.active h1 {
     text-align: center;
 }
@@ -65,15 +68,29 @@
 }
 
 .screen-anim {
-    animation: screen-glide 0.1s ease;
+    animation: screen-glide 0.2s ease;
+}
+@keyframes screen-show {
+    0% {
+        opacity: 0%;
+        transform: scale(90%);
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 100%;
+        transform: scale(100%);
+        transform: translateY(0px);
+    }
 }
 @keyframes screen-glide {
     0% {
         opacity: 100%;
         transform: scale(100%);
+        transform: translateY(0);
     }
     100% {
         opacity: 0%;
         transform: scale(90%);
+        transform: translateY(50px);
     }
 }
