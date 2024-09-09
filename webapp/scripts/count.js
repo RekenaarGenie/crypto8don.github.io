@@ -14,7 +14,7 @@ function roundToNearestStep(value, step = 0.1) {
 
 var player_energy_count = 0
 var energy_click_increase = 1
-var cost = 2
+var cost = 100
 function upgrade() {
     if (player_energy_count>=cost) {
         player_energy_count -= cost
@@ -42,4 +42,10 @@ function showNotification(message) {
       }, 500); // Время, равное длительности анимации
     }, 3000); // Задержка перед исчезновением (время отображения)
   }
+  if ("vibrate" in navigator) {
+    // Вибрация длится 200 миллисекунд
+    showNotification('Vibrate is on')
+} else {
+    showNotification('Vibrate is off')
+}
   

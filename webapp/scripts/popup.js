@@ -65,15 +65,20 @@ function createPopup(x, y) {
         popup.remove();
     }, 700);
 }
-
 function handleTouch(event) {
     event.preventDefault();  // Предотвращаем стандартное поведение
-
     for (let i = 0; i < event.touches.length; i++) {
         const touch = event.touches[i];
         createPopup(touch.clientX, touch.clientY);
     }
 }
+document.getElementById("popup_zone").addEventListener("click", function() {
+    if ("vibrate" in navigator) {
+        navigator.vibrate(200);
+    } else {
+        console.log("Вибрация не поддерживается");
+    }
+});
 
 document.querySelector('.player_box').addEventListener('touchstart', handleTouch);
 
