@@ -10,8 +10,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* user-select: none; */
-    /* -webkit-user-select: none; */
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -38,8 +36,6 @@
     --Dark-Background: #0D0D0D;
     --Metallic-Gray: #282828;
     --Cyber-Red: #FF3131;
-
-
 }
 body {
     position: relative;
@@ -51,11 +47,6 @@ body {
     background-color: var(--background-color);
     overflow:hidden;
     max-width: 100vi;
-    /* background: linear-gradient(135deg, rgba(34,34,34,1) 0%,rgba(48,48,48,1) 47%,rgba(43,43,43,1) 51%,rgba(34,34,34,1) 100%); */
-    /* background-image: url(/cache/images/Web_Photo_Editor.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 #bg_image {
     top: 0;
@@ -135,18 +126,10 @@ body {
 #game-container {
     display: flex;
     overflow: hidden;
-    /* height: calc(100vh - var(--navheight)); */
     height: 100vh;
     width: 100%;
-    
-    /* align-content: normal;
-    justify-content: center;
-    align-items: start;
-    justify-items: center; */
-
     flex-shrink: 0;
     flex-direction: column;
-    /* background-color: var(--background-color); */
     align-items: center;
     justify-content: flex-start;
 }
@@ -189,7 +172,10 @@ body {
 
 #player_skin_glow {
     filter: drop-shadow(0px 0px 0px #f24e32) drop-shadow(0px 0px 5px #f24e32);
-    animation: glow_skin 5s ease infinite;
+    transition: filter 0.3s ease;
+}
+.glow {
+    filter: drop-shadow(0px 0px 10px #f24e32) drop-shadow(0px 0px 30px #f24e32);
 }
 @keyframes glow_skin {
     0% {
@@ -246,7 +232,6 @@ body {
     width: 20%;
     height: 100%;
     opacity: 0%;
-    /* background: rgb(21,21,21); */
     background: linear-gradient(45deg, rgba(21,21,21,1) 30%, rgba(46,46,46,1) 91%);
 }
 .footer_navigation img, .footer_navigation span {

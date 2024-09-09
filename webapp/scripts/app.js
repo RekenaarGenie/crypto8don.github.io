@@ -40,18 +40,3 @@ navItems.forEach((item, index) => {
         });
     }
 });
-
-// // Находим элемент
-// const clickableElement = document.querySelector('.uiverse');
-
-// // Добавляем обработчик события клика
-// clickableElement.addEventListener('click', function() {
-//     // Добавляем класс для запуска анимации
-//     clickableElement.classList.add('clicked');
-
-//     // Убираем класс после окончания анимации, чтобы можно было кликать повторно
-//     clickableElement.addEventListener('animationend', function() {
-//         clickableElement.classList.remove('clicked');
-//         clickableElement.style.display = 'none';
-//     });
-// });
