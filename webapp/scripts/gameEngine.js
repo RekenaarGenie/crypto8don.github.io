@@ -1,5 +1,5 @@
-var player_energy_count = 150
-var energy_click_increase = 480
+var player_energy_count = 0
+var energy_click_increase = 1
 var cost = 100
 
 costView = document.getElementById('cost-view');
