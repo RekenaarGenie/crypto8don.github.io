@@ -1,7 +1,7 @@
 let glowStrength = 5;         // Стартовое значение яркости
 const maxGlow = 30;           // Максимальная яркость
 const glowStep = 1;           // Шаг увеличения яркости
-const fadeStep = 1;           // Шаг уменьшения яркости
+const fadeStep = 2;           // Шаг уменьшения яркости
 let fadeInterval;             // Интервал для уменьшения яркости
 let fadeTimeout;              // Таймаут для сброса через 1 секунду
 
